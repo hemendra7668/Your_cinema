@@ -1,3 +1,26 @@
+
+.card {
+  color: rgb(18, 18, 16);
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border: 3px;
+}
+.card :hover{
+  opacity: 87%;
+  cursor: pointer;
+ 
+}
+
 h2{
   text-align: center;
+}
+
+.card-text{
+  font-weight: 500;
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif red;
+  text-decoration-color: aquamarine;
+}
+
+#card{
+  border-radius: 255px;
 }
