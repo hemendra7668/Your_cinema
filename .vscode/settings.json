@@ -1,0 +1,5 @@
+{
+    "azureResourceManagerTools.codelens.enable": false,
+    "azureResourceManagerTools.checkForLatestSchema": false,
+    "azureResourceManagerTools.autoDetectJsonTemplates": false
+}
