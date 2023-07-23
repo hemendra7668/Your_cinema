@@ -1,3 +1,55 @@
-<p>
-  booking works!
-</p>
+<body>
+  <div *ngIf="alert" class="alert alert-success alert-dismissible fade show grp2" role="alert">
+    <strong>Scan the Qr Code below</strong> You should Copy the transaction number.<br>
+    <div class="row justify-content-center align-items-center">Pay Rs.{{20*amount}}(Rs.20/ticket)
+      <img  src="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail763671@2x.jpg" width="100" height="100" alt="">
+    </div>
+    <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="container grp">
+    <div class="row">
+      <!-- Left part with an image -->
+      <div class="col-md-6">
+        <img src="https://i.pinimg.com/originals/a6/9f/56/a69f563e82c499de8fc918b39e4e4627.png" height="500" width="500" alt="Image" class="img-fluid">
+      </div>
+
+      <!-- Right part with a form -->
+      <div class="col-md-6 " >
+        <form  >
+          <div class="form-group ">
+            <label for="exampleFormControlInput1">No of seats</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="amount" [(ngModel)]="amount">
+          </div>
+          <div  >
+            <label for="birthday">Select Date:</label><br>
+            <input class="getdate" type="date"  id="exampleFormControlInput1" name="birthday">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Select slot</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>10:00</option>
+              <option>12:00</option>
+              <option>02:00</option>
+              <option>04:00</option>
+              <option>06:00</option>
+            </select>
+          </div>
+
+          <div>
+            <button class="btn btn-secondary mb-2" (click)="submit()">Proceed for payment</button>
+          </div>
+          <div class="form-group ">
+            <label for="exampleFormControlInput1">Enter Transaction number</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" >
+          </div>
+          <div>
+            <button class="btn btn-primary" (click)="submit()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>

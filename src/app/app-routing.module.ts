@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { MoviesComponent } from './movies/movies.component';
+import { BookingComponent } from './booking/booking.component';
+
 
 const routes: Routes = [
   {
@@ -18,7 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {path:'register',component:RegisterComponent},
-  {path:'movies',component:MoviesComponent},  {
+  {path:'movies',component:MoviesComponent},
+  {path:'booking',component:BookingComponent},
+
+  {
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
