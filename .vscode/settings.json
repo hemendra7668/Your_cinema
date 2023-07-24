@@ -1,5 +1,9 @@
 {
     "azureResourceManagerTools.codelens.enable": false,
     "azureResourceManagerTools.checkForLatestSchema": false,
-    "azureResourceManagerTools.autoDetectJsonTemplates": false
+    "azureResourceManagerTools.autoDetectJsonTemplates": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
 }
