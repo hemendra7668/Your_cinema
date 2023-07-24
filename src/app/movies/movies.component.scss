@@ -10,13 +10,22 @@
   cursor: pointer;
  
 }
-
+.card img{
+  height: 220px;
+  width: 100%;
+}
 h2{
   text-align: center;
 }
 
 .card-text{
   font-weight: 500;
+  // width: 250px;
+  // height: 140px;
+display: -webkit-box;
+// -webkit-line-clamp: 6;
+// -webkit-box-orient: 'vertical',
+overflow: 'hidden';
   // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif red;
   text-decoration-color: aquamarine;
 }
