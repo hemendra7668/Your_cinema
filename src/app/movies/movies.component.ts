@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild,ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,11 +7,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./movies.component.scss'],
 })
 export class MoviesComponent  implements OnInit {
-
-  constructor(private router:Router) { }
-
+  imageUrl:any="";
+  constructor(private router:Router,private el: ElementRef) {
+    this.imageUrl="";
+   }
+  src:any="";
   ngOnInit() {}
   moveToBooking(){
+
+    const imageElement: HTMLImageElement = this.el.nativeElement.querySelector('img');
+    if (imageElement) {
+       this.imageUrl = imageElement.src;
+      console.log(this.imageUrl);
+    }
+
     this.router.navigate(['/booking']);
   }
 }

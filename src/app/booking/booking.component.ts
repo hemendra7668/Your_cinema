@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookingComponent  implements OnInit {
   alert:boolean=false;
-  constructor() { }
+  constructor() {
+   
+  }
   amount: any = "";
   ngOnInit() {}
 
   submit(){
+
     this.alert=true;
   }
   closeAlert(){

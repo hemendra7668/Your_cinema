@@ -8,13 +8,14 @@ import { Navbar2Component } from './navbar2/navbar2.component';
 import { RegisterComponent } from './register/register.component';
 import { BookingComponent } from './booking/booking.component';
 import { FormsModule } from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 const appRoutes: Routes = [
 
   { path: '', redirectTo: "login", pathMatch: "prefix" },
 ];
 @NgModule({
   declarations: [AppComponent,Navbar2Component,RegisterComponent,BookingComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   exports:[Navbar2Component,RegisterComponent,BookingComponent],
