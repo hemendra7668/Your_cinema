@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { RegisterComponent } from './register/register.component';
 import { BookingComponent } from './booking/booking.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 const appRoutes: Routes = [
 
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   declarations: [AppComponent,Navbar2Component,RegisterComponent,BookingComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,HttpClientModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,HttpClientModule,ReactiveFormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   exports:[Navbar2Component,RegisterComponent,BookingComponent],

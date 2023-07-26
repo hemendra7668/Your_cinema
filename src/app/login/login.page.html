@@ -14,18 +14,17 @@
   <strong>Online Ticket Booking System</strong>
 
   <div class="card">
-    <div class="imageContainer flexCenter">    
+    <div class="imageContainer flexCenter">
         <h3>Login</h3>
     </div>
     <div class="content">
-        <input class="textField" type="text" placeholder="Username" name="username" />
-        <input class="textField" type="password" placeholder="Password" name="password" />
-        <button class="primaryBtn">Sign in</button>
-        <a href="#">Forgot password?</a>
-        <p>Don't you have an account? <a href="#">Register</a></p>
+        <input class="textField" type="text" placeholder="Username" [(ngModel)]="email" name="username" />
+        <input class="textField" type="password" placeholder="Password"  [(ngModel)]="password" name="password" />
+        <button class="primaryBtn" (click)="onSubmit()" >Sign in</button>
+        <!-- <a href="#">Forgot password?</a> -->
+        <p>Don't you have an account? <a [routerLink]="['/register']">Register</a></p>
     </div>
 </div>
 
 </ion-content>
 
-   
