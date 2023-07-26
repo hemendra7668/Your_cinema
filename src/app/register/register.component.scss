@@ -1,68 +1,91 @@
-.container{
-    padding-top: 50px;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("/assets/images/hollywood.jpg");
+  font-family: 'Prompt', sans-serif;
 }
-form {
-    width: 600px;
-    margin: 200px 400px 200px 400px;
-    padding: 50px;
-    height: 500px;
-  }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.6)
-      ),
-      url("/assets/images/hollywood.jpg");
-  }
 
-  .container {
-    padding: 16px;
-    background-color: rgb(244, 238, 238);
-    opacity: 0.9;
-  }
-  input[type="text"],
-  input[type="number"],
-  input[type="password"] {
-    width: 50%;
-    padding: 4px;
-    margin: 3px 1px;
-    display: inline-block;
-    border: none;
-    background: #faf6ea;
-  }
-  input[type="text"]:focus,
-  input[type="number"]:focus,
-  input[type="password"]:focus {
-    background-color: rgb(216, 225, 233);
-    outline: auto;
-  }
-  hr {
-    border: 1px thick #f6f2f2;
-    margin-bottom: 25px;
-  }
-  .registerbtn {
-    background-color: rgb(229, 120, 17);
-    color: #f1f1f1;
-    padding: 16px 20px;
-    margin: 10px 130px;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    opacity: 0.9;
-  }
-  .registerbtn:hover {
-    opacity: 1;
-  }
-  a {
-    color: rgb(0, 0, 0);
-  }
-  .signin {
-    background-color: rgb(244, 208, 30);
-    text-align: center;
-    color: rgb(233, 18, 18);
-  }
-  h1 {
-    color: black;
+.flexCenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #F2F2F2;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.content{
+  border-radius: 25px;
+ height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imageContainer{
+  width: 100%;
+  background-color: #F2F2F2;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: black;
+}
+
+h3{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.textField{
+  height: 50px;
+  padding-left: 2rem;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: none;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.primaryBtn{
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  background-color: #FAD610;
+  width: 80%;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  margin-top: 10px ;
+}
+
+.primaryBtn:active {
+  transform: scale(0.98);
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+  margin: 1rem 0rem;
+}
+p{
+ color: black;
   
-  }
+}
+
+
+

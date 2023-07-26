@@ -1,76 +1,33 @@
-<!-- <div class="container m-30">
-  <h2>Register Yourself</h2>
-  <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registration</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+ 
+  <div class="card">
+    <div class="imageContainer flexCenter">    
+        <h3>Register Yourself</h3>
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <div class="content">
+        <input class="textField" type="text" placeholder="Username" name="username" />
+        <input class="textField" type="password" placeholder="Password" name="password" />
+        <input class="textField" type="Repassword" placeholder="RePassword" name="Repassword" />
+        <input class="textField" type="number" placeholder="Enter Phone number" name="phone" />
+        <button class="primaryBtn">Register</button>
+        <!-- <a href="#">Forgot password?</a> -->
+        <p>term and condition <a href="#">visit</a></p>
     </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+</div>
 
-</div> -->
+</ion-content>
 
-
-
-  <body>
-    <form>
-      <div class="container">
-        <h1>Register the details</h1>
-        <p>Fill this details create an account</p>
-        <hr />
-
-        <label for="email"><b>Email</b></label
-        ><br />
-
-        <input
-          type="text"
-          placeholder="Enter your emailid"
-          id="email"
-          required
-        /><br />
-        <label for="pw"><b>Password</b></label
-        ><br />
-        <input
-          type="password"
-          placeholder="Enter your password"
-          id="pw"
-          required
-        /><br />
-        <label for="pwreap"><b>Confirm password</b></label
-        ><br />
-        <input
-          type="password"
-          placeholder="Enter your confirm password"
-          id="pwreap"
-          required
-        /><br />
-        <label for="ph"><b>Phone</b></label
-          ><br />
-          <input
-            type="number"
-            placeholder="Enter your phone number"
-            id="ph"
-            required
-          />
-          <br>
-        <hr />
-        <p>
-          By creating an account you agree to our
-          <a href="#">Terms & conditions</a>.
-        </p>
-        <button type="submit" class="registerbtn">Register</button>
-      </div>
-      <div class="container signin">
-        <p>Already have an account?<a href="#">signin</a>.</p>
-      </div>
-    </form>
-
+   
