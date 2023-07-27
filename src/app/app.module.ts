@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { BookingComponent } from './booking/booking.component';
 import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { VariableshareService } from './variableshare.service';
 const appRoutes: Routes = [
 
   { path: '', redirectTo: "login", pathMatch: "prefix" },
@@ -16,7 +17,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [AppComponent,Navbar2Component,RegisterComponent,BookingComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule,HttpClientModule,ReactiveFormsModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },{provide: 'VariableshareService', useClass:VariableshareService }],
   bootstrap: [AppComponent],
   exports:[Navbar2Component,RegisterComponent,BookingComponent],
 })
