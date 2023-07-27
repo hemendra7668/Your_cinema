@@ -20,9 +20,7 @@ export class BookingComponent  implements OnInit {
     // console.log(this.url);
     // console.log(this.title);
   }
-
   submit(){
-
     this.alert=true;
   }
   closeAlert(){

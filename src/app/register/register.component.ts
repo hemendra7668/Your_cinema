@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {AlertController} from "@ionic/angular";
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -9,7 +10,7 @@ import {AlertController} from "@ionic/angular";
 export class RegisterComponent  implements OnInit {
 
 
-  constructor(private http:HttpClient,private alertController: AlertController) { }
+  constructor(private http:HttpClient,private router: Router,private alertController: AlertController) { }
   obj:any;
   email:any;
   firstname:any;
@@ -20,9 +21,10 @@ export class RegisterComponent  implements OnInit {
 
   }
   onSubmit(){
-    this.register(this.email,this.firstname,this.lastname,this.password,this.confirmpassword).subscribe({
+    this.register(this.firstname,this.lastname,this.email,this.password,this.confirmpassword).subscribe({
       next: (data) =>{
         console.log(data);
+        this.router.navigateByUrl('/home');
       },
       error: async (error) =>{
         console.log(error);
